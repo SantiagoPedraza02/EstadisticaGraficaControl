@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #4763ed;
+    background-color: #ffe9e9ad;
+}
+
+.selector {
+    margin-bottom: 20px;
+    color: #232636;
+}
+
+.chart-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.alert {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

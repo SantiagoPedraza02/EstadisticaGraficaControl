@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Control</title>
+    <!-- Conectar el CSS -->
+    <link rel="stylesheet" href="Tp4.css"> 
+</head>
+<body>
+    <h1>Gráfico de Control de Calidad</h1>
+    <div class="selector">
+        <label for="controlCase">Selecciona el caso de control:</label>
+        <select id="controlCase">
+            <option value="1">Caso fuera de control</option>
+            <option value="2">Caso normal</option>
+            <option value="3">2 de 3 puntos fuera de 2-sigma</option>
+            <option value="4">4 de 5 puntos consecutivos fuera de sigma</option>
+            <option value="5">8 puntos consecutivos del mismo lado de la línea central</option>
+        </select>
+        <!-- Boton para generar el gráfico -->
+        <button onclick="fetchData()">Generar Gráfico</button>
+    </div>
+    <!-- Contenedor del gráfico -->
+    <div class="chart-container">
+        <canvas id="controlChart"></canvas>
+    </div>
+    <!-- Donde se muestra la alerta -->
+    <div id="alert" class="alert"></div>
+
+    <!-- Incluir Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <!-- Conectar el JavaScript -->
+    <script src="Tp4.js"></script> 
+</body>
+</html>
